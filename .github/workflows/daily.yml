@@ -1,0 +1,25 @@
+name: daily-scrape
+on:
+  schedule: [{cron: "0 21 * * *"}]   # 06:00 JST / 16:00 CT
+  workflow_dispatch:
+  push: {branches: [main], paths: ["scrape.py","web/**",".github/workflows/**"]}
+permissions: {contents: write}
+concurrency: {group: scrape, cancel-in-progress: false}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {ref: gh-pages, path: out}
+      - run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils tesseract-ocr tesseract-ocr-jpn && pip install -q requests beautifulsoup4
+      - name: scrape (reuses existing assets; purges stale ones)
+        env: {AKIYA_SITE: "${{ github.workspace }}/out", AKIYA_CACHE: "${{ github.workspace }}/cache", TZ: America/Chicago}
+        run: |
+          mkdir -p cache out/pdf out/img && cp web/index.html out/ && touch out/.nojekyll
+          python3 scrape.py | tee summary.txt
+      - name: commit data to main, site to gh-pages
+        run: |
+          git config --global user.name akiya-bot; git config --global user.email akiya-bot@users.noreply.github.com
+          git add history.json geocache.json && (git commit -qm "history $(date +%F)" && git push -q) || true
+          cd out && git add -A && (git commit -qm "site $(date +%F)" && git push -q) || echo "no site changes"
