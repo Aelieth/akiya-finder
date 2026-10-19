@@ -169,13 +169,13 @@ def tatsuno():
 
 SUUMO={'Ena':'gifu/sc_ena','Hashimoto':'wakayama/sc_hashimoto','Tatsuno':'hyogo/sc_tatsuno'}
 PREF={'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市'}
-def suumo():
+def suumo(cat='chukoikkodate'):
     # Facts only (price/sizes/address/station) + link out; no photos or descriptions copied (SUUMO terms: private use).
     out=[]
     for city,path in SUUMO.items():
         page=1
         while page<=10:
-            u=f"https://suumo.jp/chukoikkodate/{path}/"+(f"?page={page}" if page>1 else "")
+            u=f"https://suumo.jp/{cat}/{path}/"+(f"?page={page}" if page>1 else "")
             s=B(get(u),'html.parser'); units=s.select('div.property_unit')
             for it in units:
                 d={}
@@ -191,9 +191,11 @@ def suumo():
                 adr=d.get('所在地','').replace(' ','')
                 if not adr.startswith(PREF[city][:3]): adr=PREF[city]+adr.replace(PREF[city][3:],'',1)
                 st=re.search(r'「(.+?)」',d.get('沿線・駅',''))
-                lt='akiya' if re.search(r'空き?家|古民家',it.get_text(' ')) else 'used'
-                out.append(dict(id=f"suumo-{nc}",city=city,source='private',source_name='SUUMO',source_url="https://suumo.jp"+a['href'].split('?')[0],
-                    title=f"SUUMO {d.get('物件名','') or adr.replace(PREF[city],'')}",address=adr,price_text=p,price_yen=price,rent=False,status='',
+                txt=it.get_text(' ')
+                if cat=='tochi' and not re.search(r'古家|古屋|古民家|上物|建物付|現況渡し|空き?家',txt): continue
+                lt='akiya' if re.search(r'空き?家|古民家',txt) else 'used'
+                out.append(dict(id=("suumoland-" if cat=="tochi" else "suumo-")+nc,city=city,source='private',source_name='SUUMO',source_url="https://suumo.jp"+a['href'].split('?')[0],
+                    title=("SUUMO 古家付き土地 " if cat=='tochi' else "SUUMO ")+(d.get('物件名','') or adr.replace(PREF[city],'')),land_old_house=(cat=='tochi'),address=adr,price_text=p,price_yen=price,rent=False,status='',
                     building_m2=m2('建物面積'),land_m2=m2('土地面積'),photo=None,farmland=False,listing_type=lt,
                     landmark=(st.group(1)+'駅') if st else None,notes=' | '.join(f"{k}: {d[k]}" for k in ('間取り','築年月','沿線・駅') if k in d)))
             if not s.select_one(f'a[href*="page={page+1}"]'): break
@@ -259,7 +261,7 @@ def classify(L):
     L['has_extra_land']=bool(L.get('farmland') or L.get('extra_land_m2'))
 
 if __name__=='__main__':
-    srcs={'Ena (kurashi.enalifebizsupport.jp, official city bank site)':('ena',ena),'Hashimoto (city.hashimoto.lg.jp)':('hashimoto',hashimoto),'Tatsuno (city.tatsuno.lg.jp)':('tatsuno',tatsuno),'SUUMO 中古一戸建て (private)':('suumo',suumo)}
+    srcs={'Ena (kurashi.enalifebizsupport.jp, official city bank site)':('ena',ena),'Hashimoto (city.hashimoto.lg.jp)':('hashimoto',hashimoto),'Tatsuno (city.tatsuno.lg.jp)':('tatsuno',tatsuno),'SUUMO 中古一戸建て (private)':('suumo',suumo),'SUUMO 土地・古家付き (private)':('suumoland',lambda:suumo('tochi'))}
     try: prev=json.load(open(f"{SITE}/listings.json")).get('listings',[])
     except Exception: prev=[]
     cur=[]; status={}; okpfx=set(); private=[]
@@ -271,8 +273,8 @@ if __name__=='__main__':
         except Exception as e:
             r=[x for x in prev if x['id'].startswith(pfx+'-')]  # fail-safe: keep yesterday's
             status[k]=f"FAILED (kept {len(r)} from previous run): {e}"; errors.append(f"{k}: {e}")
-        for x in r: x.setdefault('source','city' if pfx!='suumo' else 'private'); x.setdefault('listing_type','akiya'); x.setdefault('source_name',{'ena':'Ena city bank','hashimoto':'Hashimoto city bank','tatsuno':'Tatsuno city bank'}.get(pfx,'SUUMO')); x.pop('also_on',None)
-        (private if pfx=='suumo' else cur).extend(r)
+        for x in r: x.setdefault('source','city' if not pfx.startswith('suumo') else 'private'); x.setdefault('listing_type','akiya'); x.setdefault('source_name',{'ena':'Ena city bank','hashimoto':'Hashimoto city bank','tatsuno':'Tatsuno city bank'}.get(pfx,'SUUMO')); x.pop('also_on',None)
+        (private if pfx.startswith('suumo') else cur).extend(r)
     np=len(private); private=dedupe(cur,private); status['dedupe']=f"{np-len(private)} private listings merged into city-bank entries"
     cur+=private
     HIST=f"{D}/history.json"; hist=json.load(open(HIST)) if os.path.exists(HIST) else {}
