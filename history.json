@@ -1643,6 +1643,18 @@
   "title": "SUUMO 龍野町宮脇",
   "removed": null
  },
+ "suumoland-21829202": {
+  "first_seen": "2026-10-19",
+  "last_seen": "2026-10-19",
+  "title": "SUUMO 古家付き土地 新宮町新宮625-1",
+  "removed": null
+ },
+ "suumoland-20640165": {
+  "first_seen": "2026-10-19",
+  "last_seen": "2026-10-19",
+  "title": "SUUMO 古家付き土地 龍野町四箇",
+  "removed": null
+ },
  "_baseline": {
   "date": "2026-10-17"
  },
@@ -1650,6 +1662,7 @@
   "ena": "2026-10-19",
   "hashimoto": "2026-10-19",
   "tatsuno": "2026-10-19",
-  "suumo": "2026-10-19"
+  "suumo": "2026-10-19",
+  "suumoland": "2026-10-19"
  }
 }
