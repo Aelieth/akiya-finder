@@ -2,6 +2,7 @@
 <title>Akiya Finder — Ena · Hashimoto · Tatsuno</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"><link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"><script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <style>
 body{margin:0;font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif;background:#f6f4ef;color:#222}
 header{background:#2f4a3a;color:#fff;padding:10px 16px}header h1{margin:0;font-size:20px}header small{opacity:.8}
@@ -12,7 +13,7 @@ header{background:#2f4a3a;color:#fff;padding:10px 16px}header h1{margin:0;font-s
 .card{background:#fff;border-radius:8px;box-shadow:0 1px 3px #0002;overflow:hidden;cursor:pointer}.card img{width:100%;height:160px;object-fit:cover;background:#ddd}
 .card .b{padding:8px 10px;font-size:13px}.card h3{margin:0 0 4px;font-size:15px}
 .tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:8px;margin-right:3px;color:#fff}
-.new{background:#d33}.match{background:#2a8a3a}.near{background:#d98b00}.farm{background:#6b5b2a}.rent{background:#668}
+.new{background:#d33}.match{background:#2a8a3a}.near{background:#d98b00}.farm{background:#6b5b2a}.rent{background:#668}.city{background:#2471a3}.priv{background:#7a5c99}.pref{background:#e67e22}
 .pop img{width:220px;max-height:140px;object-fit:cover}.pop{font-size:12px}
 </style></head><body>
 <header><h1>Akiya Finder 空き家</h1><small id="upd"></small></header>
@@ -22,27 +23,30 @@ header{background:#2f4a3a;color:#fff;padding:10px 16px}header h1{margin:0;font-s
  <label><input type="checkbox" id="near" checked> + near matches</label>
  <label><input type="checkbox" id="all"> show ALL</label>
  <label><input type="checkbox" id="rent"> include rentals</label>
+ Type <select id="ltype"><option value="">Both</option><option value="akiya">Akiya</option><option value="used">Used house</option></select>
+ Source <select id="src"><option value="">All</option><option value="city">City bank</option><option value="private">Private</option></select>
+ <label><input type="checkbox" id="pref"> ★ preferred areas only</label>
  <b id="cnt"></b></div>
 <div id="map"></div><div id="list"></div>
 <script>
 const COL={Ena:'#c0392b',Hashimoto:'#2471a3',Tatsuno:'#7d3c98'};let D,city='All';
 const map=L.map('map').setView([35.0,136.0],7);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
-const layer=L.layerGroup().addTo(map);
+const layer=L.markerClusterGroup({maxClusterRadius:35,disableClusteringAtZoom:14}).addTo(map);
 const fmt=n=>n==null?'?':n.toLocaleString();
 function usd(l){const r=D.fx&&D.fx.jpy_usd;if(!r)return'';let y=l.price_yen;if(!y)return'';const v=Math.round(y*r/100)*100;return `<br><small>~$${v.toLocaleString()}${l.rent&&y<1e6?'/mo':''}</small>`}
-function tags(l){return (l.new?'<span class="tag new">NEW</span>':'')+(l.match?'<span class="tag match">MATCH</span>':'')+(l.near_match?'<span class="tag near">near</span>':'')+(l.has_extra_land?'<span class="tag farm">farmland/extra land</span>':'')+(l.rent?'<span class="tag rent">rent</span>':'')}
-function info(l){return `${tags(l)}<br><b>${l.title}</b><br>💴 ${l.price_text||'?'}${usd(l)}<br>🏠 ${fmt(l.building_m2)} m² · 🌾 land ${fmt(l.land_m2)} m² (${fmt(l.land_tsubo)} 坪)${l.extra_land_m2?`<br>+ attached ${fmt(l.extra_land_m2)} m² → total ${fmt(l.total_land_tsubo)} 坪`:''}${l.farmland_note?`<br><i>${l.farmland_note}</i>`:''}<br>📍 ${l.address}${l.approx_note?`<br><small style="color:#a60">${l.approx_note}</small>`:''}<br><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.maps_query||l.address)}" target=_blank rel=noopener>🗺 Google Maps</a><br><a href="${l.source_url}" target=_blank>Source</a>${l.pdf?` · <a href="${l.pdf}" target=_blank>PDF</a>`:''}${l.instagram?` · <a href="${l.instagram}" target=_blank>Instagram photos</a>`:''}<br><small>first seen ${l.first_seen}</small>`}
+function tags(l){return (l.new?'<span class="tag new">NEW</span>':'')+(l.match?'<span class="tag match">MATCH</span>':'')+(l.near_match?'<span class="tag near">near</span>':'')+(l.has_extra_land?'<span class="tag farm">farmland/extra land</span>':'')+(l.rent?'<span class="tag rent">rent</span>':'')+(l.listing_type=='used'?'<span class="tag" style="background:#888">used house</span>':'<span class="tag" style="background:#3a7d44">akiya</span>')+(l.source=='private'?`<span class="tag priv">Private · ${l.source_name}</span>`:'<span class="tag city">City bank</span>')+(l.preferred?`<span class="tag pref">★ ${l.preferred_area}</span>`:'')}
+function info(l){return `${tags(l)}<br><b>${l.title}</b><br>💴 ${l.price_text||'?'}${usd(l)}<br>🏠 ${fmt(l.building_m2)} m² · 🌾 land ${fmt(l.land_m2)} m² (${fmt(l.land_tsubo)} 坪)${l.extra_land_m2?`<br>+ attached ${fmt(l.extra_land_m2)} m² → total ${fmt(l.total_land_tsubo)} 坪`:''}${l.farmland_note?`<br><i>${l.farmland_note}</i>`:''}<br>📍 ${l.address}${l.approx_note?`<br><small style="color:#a60">${l.approx_note}</small>`:''}<br><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.maps_query||l.address)}" target=_blank rel=noopener>🗺 Google Maps</a><br><a href="${l.source_url}" target=_blank>Source</a>${(l.also_on||[]).map(a=>` · <a href="${a.url}" target=_blank>also on ${a.name}</a>`).join('')}${l.pdf?` · <a href="${l.pdf}" target=_blank>PDF</a>`:''}${l.instagram?` · <a href="${l.instagram}" target=_blank>Instagram photos</a>`:''}<br><small>first seen ${l.first_seen}</small>`}
 function render(){const bmin=+bmin_.value,bmax=+bmax_.value,lmin=+lmin_.value*3.3058,all=all_.checked;
- const ok=l=>{if(city!='All'&&l.city!=city)return false;if(l.rent&&!rent_.checked)return false;if(all)return true;
+ const ok=l=>{if(city!='All'&&l.city!=city)return false;if(l.rent&&!rent_.checked)return false;if(src_.value&&l.source!=src_.value)return false;if(ltype_.value&&l.listing_type!=ltype_.value)return false;if(pref_.checked&&!l.preferred)return false;if(all)return true;
   const b=l.building_m2,t=l.total_land_m2||0;if(b!=null&&b>=bmin&&b<=bmax&&t>=lmin)return true;return near_.checked&&l.near_match};
- const S=D.listings.filter(ok).sort((a,b)=>(b.match-a.match)||(b.near_match-a.near_match)||(b.new-a.new)||((b.total_land_m2||0)-(a.total_land_m2||0)));
+ const S=D.listings.filter(ok).sort((a,b)=>(b.preferred-a.preferred)||(b.match-a.match)||(b.near_match-a.near_match)||(b.new-a.new)||((b.total_land_m2||0)-(a.total_land_m2||0)));
  layer.clearLayers();const pts=[];list.innerHTML='';
  S.forEach(l=>{const m=L.circleMarker([l.lat,l.lng],{radius:l.match?10:7,color:l.new?'#d33':'#fff',weight:l.new?3:1,fillColor:COL[l.city],fillOpacity:.85}).bindPopup(`<div class=pop>${l.photo?`<img src="${l.photo}">`:''}${info(l)}</div>`).addTo(layer);pts.push([l.lat,l.lng]);
   const c=document.createElement('div');c.className='card';c.innerHTML=`${l.photo?`<img loading=lazy src="${l.photo}">`:''}<div class=b>${info(l)}</div>`;c.onclick=e=>{if(e.target.tagName!='A'){map.setView([l.lat,l.lng],14);m.openPopup();scrollTo(0,0)}};list.appendChild(c)});
  if(pts.length)map.fitBounds(pts,{padding:[30,30],maxZoom:13});cnt.textContent=`${S.length} shown / ${D.listings.length} total`}
-const [bmin_,bmax_,lmin_,all_,near_,rent_]=['bmin','bmax','lmin','all','near','rent'].map(i=>document.getElementById(i));
+const [bmin_,bmax_,lmin_,all_,near_,rent_,src_,pref_,ltype_]=['bmin','bmax','lmin','all','near','rent','src','pref','ltype'].map(i=>document.getElementById(i));
 fetch('listings.json').then(r=>r.json()).then(d=>{D=d;upd.textContent=`Updated ${d.updated} · ${d.listings.length} listings · ${d.listings.filter(l=>l.match).length} match · ${d.removed.length} removed since tracking`+(d.fx?` · rate as of ${d.fx.date} (¥1=$${d.fx.jpy_usd})`:'');
  ['All','Ena','Hashimoto','Tatsuno'].forEach(c=>{const b=document.createElement('button');b.className='tab'+(c=='All'?' on':'');b.textContent=c+(c=='All'?'':' ('+d.listings.filter(l=>l.city==c).length+')');b.style.borderColor=COL[c]||'';b.onclick=()=>{city=c;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');render()};tabs.appendChild(b)});
- document.querySelectorAll('input').forEach(i=>i.oninput=render);render()});
+ document.querySelectorAll('input,select').forEach(i=>i.oninput=render);(d.areas||[]).forEach(a=>L.circle([a.lat,a.lng],{radius:a.radius_m,color:'#e67e22',weight:2,fillOpacity:.08,dashArray:'6'}).bindTooltip('★ '+a.name+' (approx. area)').addTo(map));render()});
 </script></body></html>
