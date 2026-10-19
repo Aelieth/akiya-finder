@@ -69,6 +69,12 @@ def ena():
             L['photo']=img
             if pdf:
                 pt=pdftext(pdf,L['id']); L['pdf_src']=pdf; L['pdf']=f"pdf/{L['id']}-info.pdf"; L['format']='HTML detail page + PDF card + JPG photos'
+                am=re.search(r'物件所在地\s+([^\n]+)',pt)
+                if am:
+                    a=re.sub(r'\s+','',am.group(1)).replace('恵那市','')
+                    a=re.split(r'[0-9,]+万円|希望価格',a)[0]
+                    if len(a)>len(area) and a.startswith(area[:2]): L['address']=f"岐阜県恵那市{a}"
+                st=re.search(r'([^\s（(]+駅)',pt); L['landmark']=st.group(1) if st else None
                 seg=pt[pt.find('面積'):]
                 mm=re.search(r'([\d,]+\.?\d*)\s*㎡',seg); L['land_m2']=num(mm.group(1)) if mm else None
                 mm=re.search(r'合計\s+([\d,.]+)\s*㎡',pt)
@@ -119,6 +125,7 @@ def hashimoto():
                     if re.search(r'田|畑|山林',seg):
                         L['farmland']=True; L['farmland_note']=re.sub(r'\s+',' ',seg)[:200]
                         a=re.findall(r'([\d,.]+)\s*㎡',seg); L['extra_land_m2']=sum(num(x) or 0 for x in a) or None
+                    st=re.search(r'駅[^\n]*?線\s+(\S+)\s+駅',pt); L['landmark']=(st.group(1)+'駅') if st else None
                     L['notes']=re.sub(r'[ \t]+',' ',pt[pt.find('ＰＲ'):])[:800] if 'ＰＲ' in pt else ''
                 except Exception as e: errors.append(f"hashimoto pdf {no}: {e}")
             if photo: L['photo']=pdfphoto(photo,L['id'])
@@ -147,6 +154,7 @@ def tatsuno():
                    price_yen=yen(d.get('売買価格','')),rent=d.get('分類','')!='売却',status=d.get('分類',''),
                    pdf=None,building_m2=f('延床面積'),land_m2=f('土地面積'),photo=img,area=area,format='HTML table + photo image + PDF card/floorplan/photos',
                    notes=' | '.join(f"{k}: {d[k]}" for k in ('間取り','構造','建築年','都市計画','交通','現状等') if k in d))
+            st=re.search(r'([^\s　]+駅)',d.get('交通','')); L['landmark']=st.group(1) if st else None
             card=next((a['href'] for a in h.find_all_next('a',href=True,limit=6) if 'card' in a['href'].lower() or '登録カード' in a.text),None)
             if card:
                 card='https:'+card if card.startswith('//') else card
@@ -177,7 +185,21 @@ def geocode(L):
     # jitter so same-town listings don't stack
     h=int(hashlib.md5(L['id'].encode()).hexdigest()[:6],16); L['lat']+=((h%100)-50)*0.00006; L['lng']+=((h//100%100)-50)*0.00006
 
+def addr(L):
+    a=L.get('address') or ''; town=re.sub(r'^(岐阜県恵那市|和歌山県橋本市|兵庫県たつの市)','',a)
+    if re.search(r'[0-9０-９]+(番|$|-)',town): L['address_level']='full'
+    elif town: L['address_level']='town'
+    else: L['address_level']='none'
+    L['maps_query']=a if town else {'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市'}[L['city']]
+    if L['address_level']!='full':
+        L['approx_note']=f"No street address listed — approx: {town or 'city only'}"+(f" (near {L['landmark']})" if L.get('landmark') else '')
+def fx(prev):
+    for u,k in [("https://open.er-api.com/v6/latest/JPY",lambda j:j['rates']['USD']),("https://api.frankfurter.app/latest?from=JPY&to=USD",lambda j:j['rates']['USD'])]:
+        try: return {'jpy_usd':k(S.get(u,timeout=20).json()),'date':TODAY,'source':u.split('/')[2]}
+        except Exception as e: errors.append(f"fx {u}: {e}")
+    return prev
 def classify(L):
+    addr(L)
     b=L.get('building_m2'); l=L.get('land_m2') or 0; tot=l+(L.get('extra_land_m2') or 0)
     L['land_tsubo']=round(l/TSUBO,1) if l else None; L['total_land_m2']=round(tot,2) if tot else None
     L['total_land_tsubo']=round(tot/TSUBO,1) if tot else None
@@ -218,7 +240,10 @@ if __name__=='__main__':
     json.dump(geo,open(GEO,'w'),ensure_ascii=False)
     json.dump(hist,open(HIST,'w'),ensure_ascii=False,indent=1)
     removed=[dict(id=k,**v) for k,v in hist.items() if k!='_baseline' and v.get('removed')]
-    data=dict(updated=datetime.datetime.now().strftime('%Y-%m-%d %H:%M CT'),sources=status,errors=errors,listings=cur,removed=removed)
+    try: prevfx=json.load(open(f"{SITE}/listings.json")).get('fx')
+    except Exception: prevfx=None
+    rate=fx(prevfx)
+    data=dict(fx=rate,updated=datetime.datetime.now().strftime('%Y-%m-%d %H:%M CT'),sources=status,errors=errors,listings=cur,removed=removed)
     json.dump(data,open(f"{SITE}/listings.json",'w'),ensure_ascii=False,indent=1)
     from collections import Counter
     print("updated",data['updated']); print("per city",dict(Counter(L['city'] for L in cur)))
