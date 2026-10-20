@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Akiya scraper: Ena / Hashimoto / Tatsuno official akiya banks -> site/listings.json"""
+"""Akiya scraper: Ena / Hashimoto / Tatsuno / Sanda official akiya banks -> site/listings.json"""
 import re, json, os, time, hashlib, subprocess, datetime, urllib.parse, glob
 import requests
 from bs4 import BeautifulSoup as B
@@ -167,8 +167,38 @@ def tatsuno():
             out.append(L)
     return out
 
-SUUMO={'Ena':'gifu/sc_ena','Hashimoto':'wakayama/sc_hashimoto','Tatsuno':'hyogo/sc_tatsuno'}
-PREF={'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市'}
+def sanda():
+    # 三田市空き家バンク: city page points to さんだうぇるかむサイト (sanda-portal.com, city-run). HTML list -> detail tables + per-listing PDF.
+    out=[]; base="https://sanda-portal.com"
+    s=B(get(base+"/cgi-bin/recruit.php/3/list"),'html.parser')
+    links=[]
+    for h in s.find_all('h3'):
+        a=h.find('a',href=re.compile(r'/detail/\d+'))
+        if a: links.append((h.get_text(strip=True),a['href']))
+    for title,href in links:
+        u=base+href.split('?')[0]; dno=re.search(r'detail/(\d+)',href).group(1)
+        d=B(get(u+'?ck=1'),'html.parser'); t={}
+        for tr in d.select('tr'):
+            c=tr.find_all(['th','td'])
+            if len(c)>=2: t[c[0].get_text(strip=True)]=c[1].get_text(' ',strip=True)
+        pr=t.get('価格','')
+        if '成約' in pr or '成約' in t.get('敷地面積',''): continue
+        f=lambda k: num((re.search(r'([\d,.]+)',t.get(k,'')) or [None,''])[1])
+        no=t.get('物件番号') or dno; lid=f"sanda-{no}"
+        img=next((('https:'+i['src']) for i in d.select('img') if '/material/recruit/' in i.get('src','')),None)
+        L=dict(id=lid,city='Sanda',source_url=u+'?ck=1',title=f"三田市 No.{no} {re.sub(r'^\d+\s*','',title)}",address='兵庫県三田市'+t.get('所在地','').replace('三田市',''),
+               price_text=pr,price_yen=yen(pr),rent='賃貸' in t.get('契約分類',''),status=t.get('契約分類',''),pdf=None,
+               building_m2=f('床面積'),land_m2=f('敷地面積'),photo=img,format='HTML list + detail table + photos + PDF sheet',
+               notes=' | '.join(f"{k}: {t[k]}" for k in ('間取り','構造','築年数','区域区分','災害指定区域') if k in t))
+        pdf=next((a['href'] for a in d.select('a[href]') if a['href'].lower().endswith('.pdf') and '/material/recruit/' in a['href']),None)
+        if pdf:
+            pdf='https:'+pdf if pdf.startswith('//') else pdf
+            try: pdffile(pdf,lid); L['pdf']=f"pdf/{lid}-info.pdf"; L['pdf_src']=pdf
+            except Exception as e: errors.append(f"sanda pdf {no}: {e}")
+        out.append(L)
+    return out
+SUUMO={'Ena':'gifu/sc_ena','Hashimoto':'wakayama/sc_hashimoto','Tatsuno':'hyogo/sc_tatsuno','Sanda':'hyogo/sc_sanda'}
+PREF={'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市','Sanda':'兵庫県三田市'}
 def suumo(cat='chukoikkodate'):
     # Facts only (price/sizes/address/station) + link out; no photos or descriptions copied (SUUMO terms: private use).
     out=[]
@@ -219,7 +249,7 @@ def dedupe(city_bank,private):
     return keep
 AREAS=json.load(open(f"{D}/areas.json")) if os.path.exists(f"{D}/areas.json") else {}
 GEO=f"{D}/geocache.json"; geo=json.load(open(GEO)) if os.path.exists(GEO) else {}
-CENTER={'Ena':(35.4494,137.4127),'Hashimoto':(34.3149,135.6056),'Tatsuno':(34.8580,134.5455)}
+CENTER={'Ena':(35.4494,137.4127),'Hashimoto':(34.3149,135.6056),'Tatsuno':(34.8580,134.5455),'Sanda':(34.8894,135.2251)}
 def geocode(L):
     a=L['address']; q=a
     while q not in geo:
@@ -237,11 +267,11 @@ def geocode(L):
     h=int(hashlib.md5(L['id'].encode()).hexdigest()[:6],16); L['lat']+=((h%100)-50)*0.00006; L['lng']+=((h//100%100)-50)*0.00006
 
 def addr(L):
-    a=L.get('address') or ''; town=re.sub(r'^(岐阜県恵那市|和歌山県橋本市|兵庫県たつの市)','',a)
+    a=L.get('address') or ''; town=re.sub(r'^(岐阜県恵那市|和歌山県橋本市|兵庫県たつの市|兵庫県三田市)','',a)
     if re.search(r'[0-9０-９]+(番|$|-)',town): L['address_level']='full'
     elif town: L['address_level']='town'
     else: L['address_level']='none'
-    L['maps_query']=a if town else {'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市'}[L['city']]
+    L['maps_query']=a if town else {'Ena':'岐阜県恵那市','Hashimoto':'和歌山県橋本市','Tatsuno':'兵庫県たつの市','Sanda':'兵庫県三田市'}[L['city']]
     if L['address_level']!='full':
         L['approx_note']=f"No street address listed — approx: {town or 'city only'}"+(f" (near {L['landmark']})" if L.get('landmark') else '')
 def fx(prev):
@@ -257,11 +287,11 @@ def classify(L):
     bok=b is not None and 150<=b<=200; lok=tot>=1983
     L['match']=bool(bok and lok and not L.get('rent'))
     near_b=b is not None and 120<=b<=240; near_l=tot>=1300
-    L['near_match']=not L['match'] and ((bok and near_l) or (near_b and lok) or (near_b and L.get('farmland')))
+    L['near_match']=bool(not L['match'] and ((bok and near_l) or (near_b and lok) or (near_b and L.get('farmland'))))
     L['has_extra_land']=bool(L.get('farmland') or L.get('extra_land_m2'))
 
 if __name__=='__main__':
-    srcs={'Ena (kurashi.enalifebizsupport.jp, official city bank site)':('ena',ena),'Hashimoto (city.hashimoto.lg.jp)':('hashimoto',hashimoto),'Tatsuno (city.tatsuno.lg.jp)':('tatsuno',tatsuno),'SUUMO 中古一戸建て (private)':('suumo',suumo),'SUUMO 土地・古家付き (private)':('suumoland',lambda:suumo('tochi'))}
+    srcs={'Ena (kurashi.enalifebizsupport.jp, official city bank site)':('ena',ena),'Hashimoto (city.hashimoto.lg.jp)':('hashimoto',hashimoto),'Tatsuno (city.tatsuno.lg.jp)':('tatsuno',tatsuno),'Sanda (sanda-portal.com, city-run さんだうぇるかむサイト)':('sanda',sanda),'SUUMO 中古一戸建て (private)':('suumo',suumo),'SUUMO 土地・古家付き (private)':('suumoland',lambda:suumo('tochi'))}
     try: prev=json.load(open(f"{SITE}/listings.json")).get('listings',[])
     except Exception: prev=[]
     cur=[]; status={}; okpfx=set(); private=[]
@@ -273,20 +303,21 @@ if __name__=='__main__':
         except Exception as e:
             r=[x for x in prev if x['id'].startswith(pfx+'-')]  # fail-safe: keep yesterday's
             status[k]=f"FAILED (kept {len(r)} from previous run): {e}"; errors.append(f"{k}: {e}")
-        for x in r: x.setdefault('source','city' if not pfx.startswith('suumo') else 'private'); x.setdefault('listing_type','akiya'); x.setdefault('source_name',{'ena':'Ena city bank','hashimoto':'Hashimoto city bank','tatsuno':'Tatsuno city bank'}.get(pfx,'SUUMO')); x.pop('also_on',None)
+        for x in r: x.setdefault('source','city' if not pfx.startswith('suumo') else 'private'); x.setdefault('listing_type','akiya'); x.setdefault('source_name',{'ena':'Ena city bank','hashimoto':'Hashimoto city bank','tatsuno':'Tatsuno city bank','sanda':'Sanda city bank'}.get(pfx,'SUUMO')); x.pop('also_on',None)
         (private if pfx.startswith('suumo') else cur).extend(r)
     np=len(private); private=dedupe(cur,private); status['dedupe']=f"{np-len(private)} private listings merged into city-bank entries"
     cur+=private
     HIST=f"{D}/history.json"; hist=json.load(open(HIST)) if os.path.exists(HIST) else {}
     firstrun=not hist; ids=set(); base=hist.pop('_baseline',{}).get('date',TODAY)
-    sb=hist.pop('_src_baseline',{})
+    sb=hist.pop('_src_baseline',{}); OLDCITIES={k.split(':')[1] for k in sb if ':' in k} or {'Ena','Hashimoto','Tatsuno'}
     for L in cur:
         if L.get('address_private') and L['address_private'] not in L['address']: L['address']=L['address_private']
         geocode(L); classify(L); ids.add(L['id'])
         pa=[a for a in AREAS.get(L['city'],[]) if a in L['address']]; L['preferred']=bool(pa); L['preferred_area']=pa[0] if pa else None
         h=hist.get(L['id'],{}); L['first_seen']=h.get('first_seen',TODAY); L['last_seen']=TODAY
-        pf=L['id'].split('-')[0]; sb.setdefault(pf,TODAY)
-        L['new']=(L['first_seen']>max(base,sb[pf])) and (datetime.date.fromisoformat(L['first_seen'])>=datetime.date.today()-datetime.timedelta(days=7))
+        pf=L['id'].split('-')[0]; sk=f"{pf}:{L['city']}"
+        if sk not in sb: sb[sk]=sb.get(pf,TODAY) if L['city'] in OLDCITIES else TODAY  # new source or new city: no mass NEW
+        L['new']=(L['first_seen']>max(base,sb[sk])) and (datetime.date.fromisoformat(L['first_seen'])>=datetime.date.today()-datetime.timedelta(days=7))
         hist[L['id']]={'first_seen':L['first_seen'],'last_seen':TODAY,'title':L['title'],'removed':None}
     hist['_baseline']={'date':base}; hist['_src_baseline']=sb
     for k,h in hist.items():

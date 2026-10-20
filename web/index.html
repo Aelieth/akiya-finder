@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Akiya Finder — Ena · Hashimoto · Tatsuno</title>
+<title>Akiya Finder — Ena · Hashimoto · Tatsuno · Sanda</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"><link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"><script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
@@ -29,7 +29,7 @@ header{background:#2f4a3a;color:#fff;padding:10px 16px}header h1{margin:0;font-s
  <b id="cnt"></b></div>
 <div id="map"></div><div id="list"></div>
 <script>
-const COL={Ena:'#c0392b',Hashimoto:'#2471a3',Tatsuno:'#7d3c98'};let D,city='All';
+const COL={Ena:'#c0392b',Hashimoto:'#2471a3',Tatsuno:'#7d3c98',Sanda:'#d68910'};let D,city='All';
 const map=L.map('map').setView([35.0,136.0],7);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
 const layer=L.markerClusterGroup({maxClusterRadius:35,disableClusteringAtZoom:14}).addTo(map);
@@ -47,6 +47,6 @@ function render(){const bmin=+bmin_.value,bmax=+bmax_.value,lmin=+lmin_.value*3.
  if(pts.length)map.fitBounds(pts,{padding:[30,30],maxZoom:13});cnt.textContent=`${S.length} shown / ${D.listings.length} total`}
 const [bmin_,bmax_,lmin_,all_,near_,rent_,src_,pref_,ltype_]=['bmin','bmax','lmin','all','near','rent','src','pref','ltype'].map(i=>document.getElementById(i));
 fetch('listings.json').then(r=>r.json()).then(d=>{D=d;upd.textContent=`Updated ${d.updated} · ${d.listings.length} listings · ${d.listings.filter(l=>l.match).length} match · ${d.removed.length} removed since tracking`+(d.fx?` · rate as of ${d.fx.date} (¥1=$${d.fx.jpy_usd})`:'');
- ['All','Ena','Hashimoto','Tatsuno'].forEach(c=>{const b=document.createElement('button');b.className='tab'+(c=='All'?' on':'');b.textContent=c+(c=='All'?'':' ('+d.listings.filter(l=>l.city==c).length+')');b.style.borderColor=COL[c]||'';b.onclick=()=>{city=c;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');render()};tabs.appendChild(b)});
+ ['All','Ena','Hashimoto','Tatsuno','Sanda'].forEach(c=>{const b=document.createElement('button');b.className='tab'+(c=='All'?' on':'');b.textContent=c+(c=='All'?'':' ('+d.listings.filter(l=>l.city==c).length+')');b.style.borderColor=COL[c]||'';b.onclick=()=>{city=c;document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');render()};tabs.appendChild(b)});
  document.querySelectorAll('input,select').forEach(i=>i.oninput=render);(d.areas||[]).forEach(a=>L.circle([a.lat,a.lng],{radius:a.radius_m,color:'#e67e22',weight:2,fillOpacity:.08,dashArray:'6'}).bindTooltip('★ '+a.name+' (approx. area)').addTo(map));render()});
 </script></body></html>
