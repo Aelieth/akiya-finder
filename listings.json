@@ -9,21 +9,25 @@
   }
  ],
  "fx": {
-  "jpy_usd": 0.006311,
-  "date": "2026-10-20",
+  "jpy_usd": 0.00632,
+  "date": "2026-10-21",
   "source": "open.er-api.com"
  },
- "updated": "2026-10-20 18:35 CT",
+ "updated": "2026-10-21 18:50 CT",
  "sources": {
   "Ena (kurashi.enalifebizsupport.jp, official city bank site)": 87,
   "Hashimoto (city.hashimoto.lg.jp)": 41,
   "Tatsuno (city.tatsuno.lg.jp)": 41,
-  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト)": 4,
-  "SUUMO 中古一戸建て (private)": 253,
-  "SUUMO 土地・古家付き (private)": 2,
-  "dedupe": "16 private listings merged into city-bank entries"
+  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト)": "FAILED (kept 4 from previous run): 502 Server Error: Bad Gateway for url: https://sanda-portal.com/cgi-bin/recruit.php/3/list",
+  "SUUMO 中古一戸建て (private)": "FAILED (kept 237 from previous run): 503 Server Error: Service Temporarily Unavailable for url: https://suumo.jp/chukoikkodate/gifu/sc_ena/",
+  "SUUMO 土地・古家付き (private)": "FAILED (kept 2 from previous run): 503 Server Error: Service Temporarily Unavailable for url: https://suumo.jp/tochi/gifu/sc_ena/",
+  "dedupe": "0 private listings merged into city-bank entries"
  },
- "errors": [],
+ "errors": [
+  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト): 502 Server Error: Bad Gateway for url: https://sanda-portal.com/cgi-bin/recruit.php/3/list",
+  "SUUMO 中古一戸建て (private): 503 Server Error: Service Temporarily Unavailable for url: https://suumo.jp/chukoikkodate/gifu/sc_ena/",
+  "SUUMO 土地・古家付き (private): 503 Server Error: Service Temporarily Unavailable for url: https://suumo.jp/tochi/gifu/sc_ena/"
+ ],
  "listings": [
   {
    "id": "ena-1038",
@@ -63,7 +67,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -104,7 +108,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -145,7 +149,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -186,7 +190,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -227,7 +231,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -268,7 +272,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -309,7 +313,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -350,7 +354,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -391,7 +395,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -432,7 +436,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -473,7 +477,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -514,7 +518,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -557,7 +561,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -598,7 +602,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -639,7 +643,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -680,7 +684,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -721,7 +725,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -762,7 +766,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -803,7 +807,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -846,7 +850,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -889,7 +893,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -930,7 +934,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -971,7 +975,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -996,13 +1000,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Ena city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/gifu/sc_ena/nc_21419933/",
-     "address": "岐阜県恵那市大井町"
-    }
-   ],
    "lat": 35.466748,
    "lng": 137.414741,
    "geo_approx": true,
@@ -1019,7 +1016,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1060,7 +1057,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1101,7 +1098,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1142,7 +1139,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1185,7 +1182,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1228,7 +1225,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1269,7 +1266,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1312,7 +1309,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1353,7 +1350,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1396,7 +1393,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1404,7 +1401,7 @@
    "city": "Ena",
    "source_url": "https://kurashi.enalifebizsupport.jp/akiyabank/970/",
    "title": "恵那市 No.970 笠置町",
-   "address": "岐阜県恵那市笠置町毛呂窪",
+   "address": "岐阜県恵那市笠置町",
    "price_text": "売却　3200万円",
    "price_yen": 32000000,
    "rent": false,
@@ -1421,21 +1418,13 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Ena city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/gifu/sc_ena/nc_76249849/",
-     "address": "岐阜県恵那市笠置町毛呂窪"
-    }
-   ],
-   "address_private": "岐阜県恵那市笠置町毛呂窪",
-   "lat": 35.494269,
-   "lng": 137.373689,
+   "lat": 35.487002000000004,
+   "lng": 137.324007,
    "geo_approx": true,
    "geo_level": "town",
    "address_level": "town",
-   "maps_query": "岐阜県恵那市笠置町毛呂窪",
-   "approx_note": "No street address listed — approx: 笠置町毛呂窪 (near 恵那駅)",
+   "maps_query": "岐阜県恵那市笠置町",
+   "approx_note": "No street address listed — approx: 笠置町 (near 恵那駅)",
    "land_tsubo": 207.7,
    "total_land_m2": 686.68,
    "total_land_tsubo": 207.7,
@@ -1445,7 +1434,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1486,7 +1475,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1527,7 +1516,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1570,7 +1559,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1611,7 +1600,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1652,7 +1641,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1693,7 +1682,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1736,7 +1725,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1778,7 +1767,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1805,13 +1794,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Ena city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/gifu/sc_ena/nc_21721009/",
-     "address": "岐阜県恵那市明智町"
-    }
-   ],
    "lat": 35.297033000000006,
    "lng": 137.393742,
    "geo_approx": true,
@@ -1828,7 +1810,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1871,7 +1853,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1912,7 +1894,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1955,7 +1937,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -1996,7 +1978,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2039,7 +2021,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2080,7 +2062,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2121,7 +2103,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2162,7 +2144,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2205,7 +2187,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2246,7 +2228,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2289,7 +2271,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2330,7 +2312,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2373,7 +2355,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2381,7 +2363,7 @@
    "city": "Ena",
    "source_url": "https://kurashi.enalifebizsupport.jp/akiyabank/886/",
    "title": "恵那市 No.886 長島町",
-   "address": "岐阜県恵那市長島町中野",
+   "address": "岐阜県恵那市長島町",
    "price_text": "売却　800万円",
    "price_yen": 8000000,
    "rent": false,
@@ -2398,21 +2380,13 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Ena city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/gifu/sc_ena/nc_78941775/",
-     "address": "岐阜県恵那市長島町中野"
-    }
-   ],
-   "address_private": "岐阜県恵那市長島町中野",
-   "lat": 35.445578,
-   "lng": 137.384161,
+   "lat": 35.429579,
+   "lng": 137.39723800000002,
    "geo_approx": true,
    "geo_level": "town",
    "address_level": "town",
-   "maps_query": "岐阜県恵那市長島町中野",
-   "approx_note": "No street address listed — approx: 長島町中野 (near 恵那駅)",
+   "maps_query": "岐阜県恵那市長島町",
+   "approx_note": "No street address listed — approx: 長島町 (near 恵那駅)",
    "land_tsubo": 89.5,
    "total_land_m2": 295.81,
    "total_land_tsubo": 89.5,
@@ -2422,7 +2396,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2463,7 +2437,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2504,7 +2478,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2545,7 +2519,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2586,7 +2560,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2627,7 +2601,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2668,7 +2642,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2709,7 +2683,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2751,7 +2725,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2792,7 +2766,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2833,7 +2807,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2874,7 +2848,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2914,7 +2888,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2954,7 +2928,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -2995,7 +2969,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3036,7 +3010,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3077,7 +3051,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3118,7 +3092,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3159,7 +3133,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3200,7 +3174,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3241,7 +3215,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3282,7 +3256,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3323,7 +3297,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3364,7 +3338,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3405,7 +3379,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3446,7 +3420,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3487,7 +3461,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3528,7 +3502,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3569,7 +3543,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3610,7 +3584,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3651,7 +3625,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3693,7 +3667,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": true
   },
   {
@@ -3735,7 +3709,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3777,7 +3751,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3785,7 +3759,7 @@
    "city": "Hashimoto",
    "source_url": "https://www.city.hashimoto.lg.jp/guide/kensetsubu/kentikujutaku/jutakusisaku/akiya/akiyabank_bukkenjyouhou/02baibai.html#173",
    "title": "橋本市 No.173 城山台",
-   "address": "和歌山県橋本市城山台２",
+   "address": "和歌山県橋本市城山台",
    "price_text": "3,500,000円 金額交渉応じます",
    "price_yen": 3500000,
    "instagram": "https://www.instagram.com/p/Dc-W9H2AdLd/",
@@ -3803,25 +3777,13 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Hashimoto city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21354456/",
-     "address": "和歌山県橋本市城山台１"
-    },
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_20754689/",
-     "address": "和歌山県橋本市城山台２"
-    }
-   ],
-   "address_private": "和歌山県橋本市城山台２",
-   "lat": 34.348037000000005,
-   "lng": 135.607757,
+   "lat": 34.345031,
+   "lng": 135.61084,
    "geo_approx": true,
    "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "和歌山県橋本市城山台２",
+   "address_level": "town",
+   "maps_query": "和歌山県橋本市城山台",
+   "approx_note": "No street address listed — approx: 城山台",
    "land_tsubo": 53.2,
    "total_land_m2": 176.02,
    "total_land_tsubo": 53.2,
@@ -3831,7 +3793,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3873,7 +3835,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3915,7 +3877,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3957,7 +3919,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -3999,7 +3961,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4041,7 +4003,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4083,7 +4045,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4127,7 +4089,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4169,7 +4131,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4211,7 +4173,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4253,7 +4215,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4295,7 +4257,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4337,7 +4299,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4379,7 +4341,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4421,7 +4383,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4463,7 +4425,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4505,7 +4467,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4531,13 +4493,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Hashimoto city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_77169817/",
-     "address": "和歌山県橋本市しらさぎ台"
-    }
-   ],
    "lat": 34.339064,
    "lng": 135.612003,
    "geo_approx": true,
@@ -4554,7 +4509,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4596,7 +4551,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4638,7 +4593,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4680,7 +4635,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4722,7 +4677,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4764,7 +4719,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4806,7 +4761,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4848,7 +4803,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4856,7 +4811,7 @@
    "city": "Hashimoto",
    "source_url": "https://www.city.hashimoto.lg.jp/guide/kensetsubu/kentikujutaku/jutakusisaku/akiya/akiyabank_bukkenjyouhou/02baibai.html#100",
    "title": "橋本市 No.100 城山台",
-   "address": "和歌山県橋本市城山台３",
+   "address": "和歌山県橋本市城山台",
    "price_text": "8,800,000円",
    "price_yen": 8800000,
    "instagram": "https://www.instagram.com/p/C9jjJNdSiZ8/",
@@ -4874,20 +4829,13 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Hashimoto city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21733140/",
-     "address": "和歌山県橋本市城山台３"
-    }
-   ],
-   "address_private": "和歌山県橋本市城山台３",
-   "lat": 34.349664999999995,
-   "lng": 135.61606500000002,
+   "lat": 34.344010999999995,
+   "lng": 135.61576000000002,
    "geo_approx": true,
    "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "和歌山県橋本市城山台３",
+   "address_level": "town",
+   "maps_query": "和歌山県橋本市城山台",
+   "approx_note": "No street address listed — approx: 城山台",
    "land_tsubo": 56.3,
    "total_land_m2": 186.16,
    "total_land_tsubo": 56.3,
@@ -4897,7 +4845,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4939,7 +4887,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -4981,7 +4929,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5023,7 +4971,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5065,7 +5013,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5107,7 +5055,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5149,7 +5097,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5191,7 +5139,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5233,7 +5181,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5275,7 +5223,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5317,7 +5265,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5359,7 +5307,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5401,7 +5349,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5443,7 +5391,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5487,7 +5435,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5529,7 +5477,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5557,13 +5505,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Tatsuno city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_78482347/",
-     "address": "兵庫県たつの市龍野町日飼"
-    }
-   ],
    "lat": 34.867333,
    "lng": 134.55500600000002,
    "geo_approx": true,
@@ -5580,7 +5521,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5624,7 +5565,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5666,7 +5607,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5710,7 +5651,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5752,7 +5693,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5794,7 +5735,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5838,7 +5779,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5882,7 +5823,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5926,7 +5867,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5970,7 +5911,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -5996,13 +5937,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Tatsuno city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21039974/",
-     "address": "兵庫県たつの市龍野町中村"
-    }
-   ],
    "lat": 34.859945,
    "lng": 134.55656199999999,
    "geo_approx": true,
@@ -6019,7 +5953,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6063,7 +5997,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6089,13 +6023,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Tatsuno city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_20442338/",
-     "address": "兵庫県たつの市龍野町堂本"
-    }
-   ],
    "lat": 34.855561,
    "lng": 134.55197,
    "geo_approx": true,
@@ -6112,7 +6039,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6154,7 +6081,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6196,7 +6123,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6240,7 +6167,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6282,7 +6209,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6324,7 +6251,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6368,7 +6295,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6412,7 +6339,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6454,7 +6381,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6498,7 +6425,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6540,7 +6467,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6582,7 +6509,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6624,7 +6551,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6666,7 +6593,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6692,23 +6619,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Tatsuno city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21747311/",
-     "address": "兵庫県たつの市揖保川町山津屋"
-    },
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21744361/",
-     "address": "兵庫県たつの市揖保川町山津屋"
-    },
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21751446/",
-     "address": "兵庫県たつの市揖保川町山津屋"
-    }
-   ],
    "lat": 34.822389,
    "lng": 134.52396000000002,
    "geo_approx": true,
@@ -6725,7 +6635,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6767,7 +6677,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6793,13 +6703,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Tatsuno city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_78754839/",
-     "address": "兵庫県たつの市揖保川町片島"
-    }
-   ],
    "lat": 34.828232,
    "lng": 134.507523,
    "geo_approx": true,
@@ -6816,7 +6719,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6860,7 +6763,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6902,7 +6805,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6944,7 +6847,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -6986,7 +6889,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7030,7 +6933,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7074,7 +6977,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7118,7 +7021,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7160,7 +7063,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7202,7 +7105,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7241,7 +7144,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7264,13 +7167,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Sanda city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21819079/",
-     "address": "兵庫県三田市大川瀬"
-    }
-   ],
    "lat": 34.944374999999994,
    "lng": 135.11322199999998,
    "geo_approx": true,
@@ -7287,7 +7183,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7326,7 +7222,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7365,7 +7261,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7403,7 +7299,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7442,7 +7338,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7480,7 +7376,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7519,7 +7415,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7558,7 +7454,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7597,7 +7493,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7636,7 +7532,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7675,7 +7571,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7714,7 +7610,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7753,7 +7649,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7791,7 +7687,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7830,7 +7726,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7869,7 +7765,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7908,7 +7804,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7947,7 +7843,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -7986,7 +7882,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8025,7 +7921,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8064,7 +7960,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8103,7 +7999,7 @@
    "preferred": true,
    "preferred_area": "東野",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8142,7 +8038,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8180,7 +8076,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8218,7 +8114,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8257,7 +8153,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8296,7 +8192,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8335,7 +8231,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8374,7 +8270,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8413,7 +8309,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8451,7 +8347,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8489,7 +8385,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8528,7 +8424,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8566,7 +8462,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8604,7 +8500,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8642,7 +8538,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8680,7 +8576,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8719,7 +8615,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8758,7 +8654,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8796,7 +8692,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8834,7 +8730,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8872,7 +8768,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8911,7 +8807,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8950,7 +8846,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -8989,7 +8885,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9027,7 +8923,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9065,7 +8961,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9103,7 +8999,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9141,7 +9037,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9179,7 +9075,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9217,7 +9113,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9256,7 +9152,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9295,7 +9191,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9333,7 +9229,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9371,7 +9267,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9410,7 +9306,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9449,7 +9345,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9488,7 +9384,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9526,7 +9422,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9565,7 +9461,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9604,7 +9500,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9642,7 +9538,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9680,7 +9576,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9718,7 +9614,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9756,7 +9652,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9794,7 +9690,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9832,7 +9728,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9870,7 +9766,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9909,7 +9805,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9948,7 +9844,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -9987,7 +9883,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10025,7 +9921,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10064,7 +9960,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10103,7 +9999,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10142,7 +10038,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10181,7 +10077,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10219,7 +10115,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10257,7 +10153,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10296,7 +10192,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10334,7 +10230,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10373,7 +10269,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10411,7 +10307,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10450,7 +10346,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10489,7 +10385,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10527,7 +10423,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10565,7 +10461,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10603,7 +10499,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10642,7 +10538,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10680,7 +10576,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10719,7 +10615,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10757,7 +10653,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10796,7 +10692,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10835,7 +10731,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10874,7 +10770,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10912,7 +10808,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10951,7 +10847,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -10990,7 +10886,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11029,7 +10925,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11068,7 +10964,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11107,7 +11003,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11145,7 +11041,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11184,7 +11080,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11223,7 +11119,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11262,7 +11158,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11300,7 +11196,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11339,7 +11235,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11377,7 +11273,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11416,7 +11312,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11454,7 +11350,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11492,7 +11388,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11531,7 +11427,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11570,7 +11466,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11608,7 +11504,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11646,7 +11542,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11684,7 +11580,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11722,7 +11618,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11761,7 +11657,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11799,7 +11695,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11837,7 +11733,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11875,7 +11771,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11914,7 +11810,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11953,7 +11849,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -11992,7 +11888,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12031,7 +11927,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12070,7 +11966,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12109,7 +12005,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12148,7 +12044,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12187,7 +12083,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12226,7 +12122,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12265,7 +12161,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12304,7 +12200,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12343,7 +12239,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12382,7 +12278,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12420,7 +12316,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12459,7 +12355,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12498,7 +12394,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12537,7 +12433,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12575,7 +12471,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12613,7 +12509,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12652,7 +12548,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12690,7 +12586,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12728,7 +12624,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12766,7 +12662,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12804,7 +12700,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12842,7 +12738,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12880,7 +12776,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12918,7 +12814,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12956,7 +12852,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -12994,7 +12890,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13033,7 +12929,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13071,7 +12967,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13110,7 +13006,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13148,7 +13044,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13187,7 +13083,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13225,7 +13121,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13263,7 +13159,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13301,7 +13197,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13339,7 +13235,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13378,7 +13274,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13417,7 +13313,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13455,7 +13351,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13494,7 +13390,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13533,7 +13429,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13571,7 +13467,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13609,7 +13505,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13647,7 +13543,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13685,7 +13581,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13723,7 +13619,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13761,7 +13657,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13799,7 +13695,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13837,7 +13733,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13875,7 +13771,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13913,7 +13809,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13951,7 +13847,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -13989,7 +13885,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14027,7 +13923,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14065,7 +13961,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14103,7 +13999,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14142,7 +14038,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14180,7 +14076,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14218,7 +14114,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14257,7 +14153,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14296,7 +14192,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14335,7 +14231,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14374,7 +14270,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14413,7 +14309,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14452,7 +14348,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14490,7 +14386,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14528,7 +14424,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14566,7 +14462,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14605,7 +14501,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14643,7 +14539,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14682,7 +14578,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14720,7 +14616,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14758,7 +14654,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14796,7 +14692,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14835,7 +14731,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14873,7 +14769,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14911,7 +14807,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14949,7 +14845,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -14987,7 +14883,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15025,7 +14921,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15063,7 +14959,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15101,7 +14997,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15139,7 +15035,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15177,7 +15073,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15215,7 +15111,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15253,7 +15149,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15291,7 +15187,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15329,7 +15225,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15367,7 +15263,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15405,7 +15301,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15443,7 +15339,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15481,7 +15377,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15519,7 +15415,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15558,7 +15454,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15596,7 +15492,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15635,7 +15531,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15673,7 +15569,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15711,7 +15607,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15749,7 +15645,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15787,7 +15683,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15825,7 +15721,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15863,7 +15759,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15901,7 +15797,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15939,7 +15835,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -15977,7 +15873,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16015,7 +15911,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16053,7 +15949,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16091,7 +15987,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16129,7 +16025,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16167,7 +16063,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16205,7 +16101,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16243,7 +16139,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16282,7 +16178,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16321,7 +16217,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16360,7 +16256,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16399,7 +16295,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16437,7 +16333,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16475,7 +16371,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16513,7 +16409,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   },
   {
@@ -16552,7 +16448,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20",
+   "last_seen": "2026-10-21",
    "new": false
   }
  ],
