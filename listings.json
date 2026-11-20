@@ -9,21 +9,23 @@
   }
  ],
  "fx": {
-  "jpy_usd": 0.006275,
-  "date": "2026-11-18",
+  "jpy_usd": 0.00626,
+  "date": "2026-11-19",
   "source": "open.er-api.com"
  },
- "updated": "2026-11-18 20:10 CT",
+ "updated": "2026-11-19 19:59 CT",
  "sources": {
   "Ena (kurashi.enalifebizsupport.jp, official city bank site)": 87,
   "Hashimoto (city.hashimoto.lg.jp)": 42,
   "Tatsuno (city.tatsuno.lg.jp)": 37,
-  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト)": 4,
-  "SUUMO 中古一戸建て (private)": 254,
+  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト)": "FAILED (kept 4 from previous run): 502 Server Error: Bad Gateway for url: https://sanda-portal.com/cgi-bin/recruit.php/3/list",
+  "SUUMO 中古一戸建て (private)": 253,
   "SUUMO 土地・古家付き (private)": 2,
   "dedupe": "10 private listings merged into city-bank entries"
  },
- "errors": [],
+ "errors": [
+  "Sanda (sanda-portal.com, city-run さんだうぇるかむサイト): 502 Server Error: Bad Gateway for url: https://sanda-portal.com/cgi-bin/recruit.php/3/list"
+ ],
  "listings": [
   {
    "id": "ena-1008",
@@ -65,7 +67,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -106,7 +108,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -147,7 +149,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -188,7 +190,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -229,7 +231,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -270,7 +272,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -311,7 +313,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -352,7 +354,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -393,7 +395,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -434,7 +436,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -475,7 +477,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -516,7 +518,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -557,7 +559,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -598,7 +600,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -639,7 +641,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -680,7 +682,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -721,7 +723,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -762,7 +764,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -803,7 +805,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -844,7 +846,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -887,7 +889,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -930,7 +932,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -971,7 +973,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1012,7 +1014,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1053,7 +1055,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1094,7 +1096,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1135,7 +1137,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1178,7 +1180,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1221,7 +1223,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1262,7 +1264,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1305,7 +1307,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1346,7 +1348,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1389,7 +1391,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1438,7 +1440,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1479,7 +1481,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1520,7 +1522,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1563,7 +1565,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1604,7 +1606,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1645,7 +1647,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1686,7 +1688,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1729,7 +1731,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1771,7 +1773,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1821,7 +1823,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1864,7 +1866,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1905,7 +1907,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1948,7 +1950,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -1989,7 +1991,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2032,7 +2034,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2073,7 +2075,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2114,7 +2116,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2155,7 +2157,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2198,7 +2200,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2239,7 +2241,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2282,7 +2284,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2323,7 +2325,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2366,7 +2368,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2415,7 +2417,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2456,7 +2458,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2497,7 +2499,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2538,7 +2540,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2579,7 +2581,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2620,7 +2622,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2661,7 +2663,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2702,7 +2704,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2744,7 +2746,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2785,7 +2787,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2826,7 +2828,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2867,7 +2869,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2907,7 +2909,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2947,7 +2949,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -2988,7 +2990,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3029,7 +3031,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3070,7 +3072,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3111,7 +3113,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3152,7 +3154,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3193,7 +3195,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3234,7 +3236,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3275,7 +3277,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3316,7 +3318,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3357,7 +3359,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3398,7 +3400,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3439,7 +3441,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3480,7 +3482,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3521,7 +3523,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3562,7 +3564,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3603,7 +3605,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3644,7 +3646,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3686,8 +3688,8 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-18",
-   "new": true
+   "last_seen": "2026-11-19",
+   "new": false
   },
   {
    "id": "hashimoto-177",
@@ -3728,7 +3730,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3770,7 +3772,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3812,7 +3814,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3854,7 +3856,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3908,7 +3910,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3950,7 +3952,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -3992,7 +3994,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4034,7 +4036,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4076,7 +4078,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4118,7 +4120,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4160,7 +4162,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4204,7 +4206,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4246,7 +4248,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4288,7 +4290,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4330,7 +4332,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4372,7 +4374,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4414,7 +4416,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4456,7 +4458,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4498,7 +4500,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4540,7 +4542,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4582,7 +4584,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4624,7 +4626,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4666,7 +4668,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4708,7 +4710,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4750,7 +4752,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4792,7 +4794,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4834,7 +4836,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4876,7 +4878,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4918,7 +4920,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -4960,7 +4962,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5002,7 +5004,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5044,7 +5046,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5086,7 +5088,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5128,7 +5130,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5170,7 +5172,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5212,7 +5214,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5254,7 +5256,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5296,7 +5298,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5338,7 +5340,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5380,7 +5382,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5422,7 +5424,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5464,7 +5466,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5508,7 +5510,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5550,7 +5552,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5601,7 +5603,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5643,7 +5645,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5687,7 +5689,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5729,7 +5731,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5771,7 +5773,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5815,7 +5817,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5859,7 +5861,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5903,7 +5905,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5947,7 +5949,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -5991,7 +5993,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6033,7 +6035,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6075,7 +6077,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6119,7 +6121,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6161,7 +6163,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6203,7 +6205,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6247,7 +6249,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6291,7 +6293,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6333,7 +6335,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6377,7 +6379,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6419,7 +6421,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6461,7 +6463,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6503,7 +6505,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6545,7 +6547,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6604,7 +6606,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6646,7 +6648,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6688,7 +6690,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6730,7 +6732,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6772,7 +6774,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6814,7 +6816,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6858,7 +6860,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6902,7 +6904,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6946,7 +6948,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -6988,7 +6990,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7030,7 +7032,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7069,7 +7071,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7092,13 +7094,6 @@
    "source": "city",
    "listing_type": "akiya",
    "source_name": "Sanda city bank",
-   "also_on": [
-    {
-     "name": "SUUMO",
-     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22132030/",
-     "address": "兵庫県三田市大川瀬"
-    }
-   ],
    "lat": 34.944374999999994,
    "lng": 135.11322199999998,
    "geo_approx": true,
@@ -7115,8 +7110,15 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
+   "last_seen": "2026-11-19",
+   "new": false,
+   "also_on": [
+    {
+     "name": "SUUMO",
+     "url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22132030/",
+     "address": "兵庫県三田市大川瀬"
+    }
+   ]
   },
   {
    "id": "sanda-63",
@@ -7154,7 +7156,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7193,7 +7195,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7232,7 +7234,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7271,7 +7273,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7310,7 +7312,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7348,7 +7350,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7387,7 +7389,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7426,7 +7428,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7465,7 +7467,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7504,7 +7506,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7543,7 +7545,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7582,7 +7584,7 @@
    "preferred": true,
    "preferred_area": "東野",
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7621,7 +7623,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7660,7 +7662,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7699,7 +7701,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7738,7 +7740,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7777,7 +7779,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7816,7 +7818,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7854,7 +7856,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7893,7 +7895,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7931,7 +7933,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -7970,7 +7972,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8009,7 +8011,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8048,7 +8050,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8087,7 +8089,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8126,7 +8128,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8164,7 +8166,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8202,45 +8204,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21853390",
-   "city": "Hashimoto",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21853390/",
-   "title": "SUUMO 城山台２",
-   "land_old_house": false,
-   "address": "和歌山県橋本市城山台２",
-   "price_text": "380万円",
-   "price_yen": 3800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 103.91,
-   "land_m2": 197.18,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "林間田園都市駅",
-   "notes": "間取り: 4LDK | 築年月: 1984年3月 | 沿線・駅: 南海高野線「林間田園都市」徒歩26分",
-   "lat": 34.348217000000005,
-   "lng": 135.608657,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "和歌山県橋本市城山台２",
-   "land_tsubo": 59.6,
-   "total_land_m2": 197.18,
-   "total_land_tsubo": 59.6,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8278,7 +8242,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21419017",
+   "city": "Hashimoto",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21419017/",
+   "title": "SUUMO 城山台４",
+   "land_old_house": false,
+   "address": "和歌山県橋本市城山台４",
+   "price_text": "680万円",
+   "price_yen": 6800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 156.31,
+   "land_m2": 237.86,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "林間田園都市駅",
+   "notes": "間取り: 5LDK | 築年月: 1991年9月 | 沿線・駅: 南海高野線「林間田園都市」徒歩42分",
+   "lat": 34.354181999999994,
+   "lng": 135.61832199999998,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "和歌山県橋本市城山台４",
+   "land_tsubo": 72.0,
+   "total_land_m2": 237.86,
+   "total_land_tsubo": 72.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8316,7 +8318,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8355,45 +8357,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21419017",
-   "city": "Hashimoto",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21419017/",
-   "title": "SUUMO 城山台４",
-   "land_old_house": false,
-   "address": "和歌山県橋本市城山台４",
-   "price_text": "880万円",
-   "price_yen": 8800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 156.31,
-   "land_m2": 237.86,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "林間田園都市駅",
-   "notes": "間取り: 5LDK | 築年月: 1991年9月 | 沿線・駅: 南海高野線「林間田園都市」徒歩42分",
-   "lat": 34.354181999999994,
-   "lng": 135.61832199999998,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "和歌山県橋本市城山台４",
-   "land_tsubo": 72.0,
-   "total_land_m2": 237.86,
-   "total_land_tsubo": 72.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8431,7 +8395,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8470,7 +8434,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8509,7 +8473,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8548,7 +8512,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8587,7 +8551,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8625,7 +8589,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21565547",
+   "city": "Hashimoto",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21565547/",
+   "title": "SUUMO あやの台１-33-4",
+   "land_old_house": false,
+   "address": "和歌山県橋本市あやの台１-33-4",
+   "price_text": "1380万円",
+   "price_yen": 13800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 114.27,
+   "land_m2": 176.74,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "隅田駅",
+   "notes": "間取り: 4LDK+S（納戸） | 築年月: 2006年12月 | 沿線・駅: ＪＲ和歌山線「隅田」徒歩25分",
+   "lat": 34.343071,
+   "lng": 135.650585,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "和歌山県橋本市あやの台１-33-4",
+   "land_tsubo": 53.5,
+   "total_land_m2": 176.74,
+   "total_land_tsubo": 53.5,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8663,7 +8665,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8701,46 +8703,8 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
-  },
-  {
-   "id": "suumo-21565547",
-   "city": "Hashimoto",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/wakayama/sc_hashimoto/nc_21565547/",
-   "title": "SUUMO あやの台１-33-4",
-   "land_old_house": false,
-   "address": "和歌山県橋本市あやの台１-33-4",
-   "price_text": "1380万円",
-   "price_yen": 13800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 114.27,
-   "land_m2": 176.74,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "隅田駅",
-   "notes": "間取り: 4LDK+S（納戸） | 築年月: 2006年12月 | 沿線・駅: ＪＲ和歌山線「隅田」徒歩25分",
-   "lat": 34.343071,
-   "lng": 135.650585,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "和歌山県橋本市あやの台１-33-4",
-   "land_tsubo": 53.5,
-   "total_land_m2": 176.74,
-   "total_land_tsubo": 53.5,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
-   "new": false
   },
   {
    "id": "suumo-79096329",
@@ -8777,7 +8741,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8815,7 +8779,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8853,7 +8817,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8892,7 +8856,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -8931,7 +8895,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -8970,7 +8934,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9008,7 +8972,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9046,7 +9010,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9084,7 +9048,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9122,7 +9086,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9161,7 +9125,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9200,7 +9164,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9239,7 +9203,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9277,7 +9241,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9316,7 +9280,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9355,7 +9319,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -9394,7 +9358,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9432,7 +9396,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9471,7 +9435,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -9509,7 +9473,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9547,7 +9511,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9585,7 +9549,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9623,7 +9587,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9661,7 +9625,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -9700,7 +9664,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9739,7 +9703,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9777,7 +9741,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9816,7 +9780,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9855,7 +9819,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9894,7 +9858,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9933,7 +9897,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -9972,7 +9936,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10010,7 +9974,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10048,7 +10012,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10086,7 +10050,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21981093",
+   "city": "Tatsuno",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21981093/",
+   "title": "SUUMO 揖保町中臣1349-1",
+   "land_old_house": false,
+   "address": "兵庫県たつの市揖保町中臣1349-1",
+   "price_text": "980万円",
+   "price_yen": 9800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 155.15,
+   "land_m2": 197.84,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "本竜野駅",
+   "notes": "間取り: 6LDK | 築年月: 1978年11月 | 沿線・駅: ＪＲ姫新線「本竜野」バス14分停歩10分",
+   "lat": 34.841879000000006,
+   "lng": 134.53943,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県たつの市揖保町中臣1349-1",
+   "land_tsubo": 59.8,
+   "total_land_m2": 197.84,
+   "total_land_tsubo": 59.8,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10125,45 +10127,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21981093",
-   "city": "Tatsuno",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21981093/",
-   "title": "SUUMO 揖保町中臣1349-1",
-   "land_old_house": false,
-   "address": "兵庫県たつの市揖保町中臣1349-1",
-   "price_text": "980万円",
-   "price_yen": 9800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 155.15,
-   "land_m2": 197.84,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "本竜野駅",
-   "notes": "間取り: 6LDK | 築年月: 1978年11月 | 沿線・駅: ＪＲ姫新線「本竜野」バス14分停歩10分",
-   "lat": 34.841879000000006,
-   "lng": 134.53943,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県たつの市揖保町中臣1349-1",
-   "land_tsubo": 59.8,
-   "total_land_m2": 197.84,
-   "total_land_tsubo": 59.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10202,7 +10166,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10241,7 +10205,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10279,7 +10243,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10318,7 +10282,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10356,7 +10320,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10395,7 +10359,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10434,7 +10398,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10472,7 +10436,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10510,7 +10474,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10549,7 +10513,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10587,7 +10551,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10626,7 +10590,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10665,7 +10629,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10704,7 +10668,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10743,7 +10707,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10781,7 +10745,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10820,7 +10784,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10858,7 +10822,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10896,7 +10860,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10935,7 +10899,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -10974,46 +10938,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21384264",
-   "city": "Tatsuno",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21384264/",
-   "title": "SUUMO 龍野町島田",
-   "land_old_house": false,
-   "address": "兵庫県たつの市龍野町島田",
-   "price_text": "2680万円",
-   "price_yen": 26800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 167.12,
-   "land_m2": 274.96,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "本竜野駅",
-   "notes": "間取り: 5LDK | 築年月: 1989年8月 | 沿線・駅: ＪＲ姫新線「本竜野」徒歩22分",
-   "lat": 34.874672,
-   "lng": 134.554398,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "town",
-   "maps_query": "兵庫県たつの市龍野町島田",
-   "approx_note": "No street address listed — approx: 龍野町島田 (near 本竜野駅)",
-   "land_tsubo": 83.2,
-   "total_land_m2": 274.96,
-   "total_land_tsubo": 83.2,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11052,8 +10977,86 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
+  },
+  {
+   "id": "suumo-21384264",
+   "city": "Tatsuno",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_21384264/",
+   "title": "SUUMO 龍野町島田",
+   "land_old_house": false,
+   "address": "兵庫県たつの市龍野町島田",
+   "price_text": "2680万円",
+   "price_yen": 26800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 167.12,
+   "land_m2": 274.96,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "本竜野駅",
+   "notes": "間取り: 5LDK | 築年月: 1989年8月 | 沿線・駅: ＪＲ姫新線「本竜野」徒歩22分",
+   "lat": 34.874672,
+   "lng": 134.554398,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "town",
+   "maps_query": "兵庫県たつの市龍野町島田",
+   "approx_note": "No street address listed — approx: 龍野町島田 (near 本竜野駅)",
+   "land_tsubo": 83.2,
+   "total_land_m2": 274.96,
+   "total_land_tsubo": 83.2,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-22223134",
+   "city": "Tatsuno",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_tatsuno/nc_22223134/",
+   "title": "SUUMO 揖西町小犬丸",
+   "land_old_house": false,
+   "address": "兵庫県たつの市揖西町小犬丸",
+   "price_text": "2680万円",
+   "price_yen": 26800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 195.04,
+   "land_m2": 4623.99,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "相生駅",
+   "notes": "間取り: 11DK | 築年月: 1912年1月 | 沿線・駅: ＪＲ山陽本線「相生」バス12分停歩42分",
+   "lat": 34.861237,
+   "lng": 134.482484,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "town",
+   "maps_query": "兵庫県たつの市揖西町小犬丸",
+   "approx_note": "No street address listed — approx: 揖西町小犬丸 (near 相生駅)",
+   "land_tsubo": 1398.8,
+   "total_land_m2": 4623.99,
+   "total_land_tsubo": 1398.8,
+   "match": true,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "new": true
   },
   {
    "id": "suumo-20621205",
@@ -11091,7 +11094,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11130,7 +11133,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11169,7 +11172,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11207,7 +11210,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11246,7 +11249,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11285,7 +11288,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11324,7 +11327,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11363,7 +11366,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11401,7 +11404,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11440,7 +11443,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11478,7 +11481,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11516,7 +11519,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11555,7 +11558,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11594,7 +11597,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11632,7 +11635,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11670,7 +11673,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11708,7 +11711,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11746,7 +11749,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11784,7 +11787,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11822,7 +11825,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11860,7 +11863,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11898,7 +11901,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-25",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11937,7 +11940,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -11976,7 +11979,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12015,7 +12018,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12054,7 +12057,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12093,7 +12096,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12132,7 +12135,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12171,7 +12174,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12210,7 +12213,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12249,7 +12252,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12288,7 +12291,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12327,7 +12330,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12366,7 +12369,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12405,7 +12408,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12444,7 +12447,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12482,7 +12485,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12521,7 +12524,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12560,7 +12563,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12599,7 +12602,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12637,7 +12640,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21837666",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837666/",
+   "title": "SUUMO つつじが丘北１",
+   "land_old_house": false,
+   "address": "兵庫県三田市つつじが丘北１",
+   "price_text": "880万円",
+   "price_yen": 8800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 107.19,
+   "land_m2": 201.55,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "相野駅",
+   "notes": "間取り: 4LDK | 築年月: 1996年9月 | 沿線・駅: ＪＲ福知山線「相野」バス9分停歩5分",
+   "lat": 34.9475,
+   "lng": 135.131943,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市つつじが丘北１",
+   "land_tsubo": 61.0,
+   "total_land_m2": 201.55,
+   "total_land_tsubo": 61.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12676,7 +12717,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12714,45 +12755,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21837666",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837666/",
-   "title": "SUUMO つつじが丘北１",
-   "land_old_house": false,
-   "address": "兵庫県三田市つつじが丘北１",
-   "price_text": "880万円",
-   "price_yen": 8800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 107.19,
-   "land_m2": 201.55,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "相野駅",
-   "notes": "間取り: 4LDK | 築年月: 1996年9月 | 沿線・駅: ＪＲ福知山線「相野」バス9分停歩5分",
-   "lat": 34.9475,
-   "lng": 135.131943,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市つつじが丘北１",
-   "land_tsubo": 61.0,
-   "total_land_m2": 201.55,
-   "total_land_tsubo": 61.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12791,7 +12794,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12830,7 +12833,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12868,7 +12871,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12906,7 +12909,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12944,7 +12947,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -12982,7 +12985,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13020,7 +13023,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13058,7 +13061,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21578772",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21578772/",
+   "title": "SUUMO つつじが丘南１",
+   "land_old_house": false,
+   "address": "兵庫県三田市つつじが丘南１",
+   "price_text": "1180万円",
+   "price_yen": 11800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 115.74,
+   "land_m2": 200.29,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "相野駅",
+   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1989年10月 | 沿線・駅: ＪＲ福知山線「相野」バス8分停歩4分",
+   "lat": 34.946745,
+   "lng": 135.135851,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市つつじが丘南１",
+   "land_tsubo": 60.6,
+   "total_land_m2": 200.29,
+   "total_land_tsubo": 60.6,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13097,45 +13138,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21578772",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21578772/",
-   "title": "SUUMO つつじが丘南１",
-   "land_old_house": false,
-   "address": "兵庫県三田市つつじが丘南１",
-   "price_text": "1180万円",
-   "price_yen": 11800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 115.74,
-   "land_m2": 200.29,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "相野駅",
-   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1989年10月 | 沿線・駅: ＪＲ福知山線「相野」バス8分停歩4分",
-   "lat": 34.946745,
-   "lng": 135.135851,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市つつじが丘南１",
-   "land_tsubo": 60.6,
-   "total_land_m2": 200.29,
-   "total_land_tsubo": 60.6,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13173,7 +13176,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13211,84 +13214,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-22124381",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22124381/",
-   "title": "SUUMO 小野",
-   "land_old_house": false,
-   "address": "兵庫県三田市小野",
-   "price_text": "1280万円",
-   "price_yen": 12800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 211.71,
-   "land_m2": 395.95,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "三田駅",
-   "notes": "間取り: 3LDK | 築年月: 1989年8月 | 沿線・駅: ＪＲ福知山線「三田」バス16分停歩21分",
-   "lat": 34.950479,
-   "lng": 135.23833,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "town",
-   "maps_query": "兵庫県三田市小野",
-   "approx_note": "No street address listed — approx: 小野 (near 三田駅)",
-   "land_tsubo": 119.8,
-   "total_land_m2": 395.95,
-   "total_land_tsubo": 119.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21878300",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21878300/",
-   "title": "SUUMO つつじが丘南１",
-   "land_old_house": false,
-   "address": "兵庫県三田市つつじが丘南１",
-   "price_text": "1380万円",
-   "price_yen": 13800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 108.28,
-   "land_m2": 193.68,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "相野駅",
-   "notes": "間取り: 4LDK | 築年月: 1990年2月 | 沿線・駅: ＪＲ福知山線「相野」バス9分停歩3分",
-   "lat": 34.948305,
-   "lng": 135.134051,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市つつじが丘南１",
-   "land_tsubo": 58.6,
-   "total_land_m2": 193.68,
-   "total_land_tsubo": 58.6,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13327,7 +13253,121 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21878300",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21878300/",
+   "title": "SUUMO つつじが丘南１",
+   "land_old_house": false,
+   "address": "兵庫県三田市つつじが丘南１",
+   "price_text": "1380万円",
+   "price_yen": 13800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 108.28,
+   "land_m2": 193.68,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "相野駅",
+   "notes": "間取り: 4LDK | 築年月: 1990年2月 | 沿線・駅: ＪＲ福知山線「相野」バス9分停歩3分",
+   "lat": 34.948305,
+   "lng": 135.134051,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市つつじが丘南１",
+   "land_tsubo": 58.6,
+   "total_land_m2": 193.68,
+   "total_land_tsubo": 58.6,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21974103",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21974103/",
+   "title": "SUUMO 狭間が丘４",
+   "land_old_house": false,
+   "address": "兵庫県三田市狭間が丘４",
+   "price_text": "1480万円",
+   "price_yen": 14800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 94.77,
+   "land_m2": 125.37,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "フラワータウン駅",
+   "notes": "間取り: 4LDK | 築年月: 1987年12月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩14分",
+   "lat": 34.880241000000005,
+   "lng": 135.202456,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市狭間が丘４",
+   "land_tsubo": 37.9,
+   "total_land_m2": 125.37,
+   "total_land_tsubo": 37.9,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-22124426",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22124426/",
+   "title": "SUUMO 友が丘２",
+   "land_old_house": false,
+   "address": "兵庫県三田市友が丘２",
+   "price_text": "1480万円",
+   "price_yen": 14800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 115.51,
+   "land_m2": 218.37,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "三田駅",
+   "notes": "間取り: 5DK | 築年月: 1988年2月 | 沿線・駅: ＪＲ福知山線「三田」徒歩33分",
+   "lat": 34.9037,
+   "lng": 135.22735500000002,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市友が丘２",
+   "land_tsubo": 66.1,
+   "total_land_m2": 218.37,
+   "total_land_tsubo": 66.1,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13366,83 +13406,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-22124426",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22124426/",
-   "title": "SUUMO 友が丘２",
-   "land_old_house": false,
-   "address": "兵庫県三田市友が丘２",
-   "price_text": "1480万円",
-   "price_yen": 14800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 115.51,
-   "land_m2": 218.37,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "三田駅",
-   "notes": "間取り: 5DK | 築年月: 1988年2月 | 沿線・駅: ＪＲ福知山線「三田」徒歩33分",
-   "lat": 34.9037,
-   "lng": 135.22735500000002,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市友が丘２",
-   "land_tsubo": 66.1,
-   "total_land_m2": 218.37,
-   "total_land_tsubo": 66.1,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21974103",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21974103/",
-   "title": "SUUMO 狭間が丘４",
-   "land_old_house": false,
-   "address": "兵庫県三田市狭間が丘４",
-   "price_text": "1480万円",
-   "price_yen": 14800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 94.77,
-   "land_m2": 125.37,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "フラワータウン駅",
-   "notes": "間取り: 4LDK | 築年月: 1987年12月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩14分",
-   "lat": 34.880241000000005,
-   "lng": 135.202456,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市狭間が丘４",
-   "land_tsubo": 37.9,
-   "total_land_m2": 125.37,
-   "total_land_tsubo": 37.9,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13481,7 +13445,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13520,7 +13484,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13559,7 +13523,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -13597,7 +13561,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13635,7 +13599,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13674,7 +13638,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13712,7 +13676,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13751,7 +13715,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13789,7 +13753,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13827,45 +13791,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21763895",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21763895/",
-   "title": "SUUMO 富士が丘１",
-   "land_old_house": false,
-   "address": "兵庫県三田市富士が丘１",
-   "price_text": "2180万円",
-   "price_yen": 21800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 99.36,
-   "land_m2": 218.04,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "フラワータウン駅",
-   "notes": "間取り: 4LDK | 築年月: 1990年3月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩13分",
-   "lat": 34.889384,
-   "lng": 135.19746800000001,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市富士が丘１",
-   "land_tsubo": 66.0,
-   "total_land_m2": 218.04,
-   "total_land_tsubo": 66.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13903,7 +13829,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13941,7 +13867,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21763895",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21763895/",
+   "title": "SUUMO 富士が丘１",
+   "land_old_house": false,
+   "address": "兵庫県三田市富士が丘１",
+   "price_text": "2180万円",
+   "price_yen": 21800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 99.36,
+   "land_m2": 218.04,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "フラワータウン駅",
+   "notes": "間取り: 4LDK | 築年月: 1990年3月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩13分",
+   "lat": 34.889384,
+   "lng": 135.19746800000001,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市富士が丘１",
+   "land_tsubo": 66.0,
+   "total_land_m2": 218.04,
+   "total_land_tsubo": 66.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -13979,197 +13943,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-22161152",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22161152/",
-   "title": "SUUMO 学園６",
-   "land_old_house": false,
-   "address": "兵庫県三田市学園６",
-   "price_text": "2280万円",
-   "price_yen": 22800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 186.76,
-   "land_m2": 313.33,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩37分",
-   "lat": 34.908563,
-   "lng": 135.167152,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市学園６",
-   "land_tsubo": 94.8,
-   "total_land_m2": 313.33,
-   "total_land_tsubo": 94.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-11-12",
-   "last_seen": "2026-11-18",
-   "new": true
-  },
-  {
-   "id": "suumo-21601840",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21601840/",
-   "title": "SUUMO 学園６",
-   "land_old_house": false,
-   "address": "兵庫県三田市学園６",
-   "price_text": "2280万円",
-   "price_yen": 22800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 186.76,
-   "land_m2": 313.33,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 4LDK | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」バス25分停歩8分",
-   "lat": 34.903643,
-   "lng": 135.163792,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市学園６",
-   "land_tsubo": 94.8,
-   "total_land_m2": 313.33,
-   "total_land_tsubo": 94.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-75113685",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_75113685/",
-   "title": "SUUMO 狭間が丘４",
-   "land_old_house": false,
-   "address": "兵庫県三田市狭間が丘４",
-   "price_text": "2280万円",
-   "price_yen": 22800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 100.76,
-   "land_m2": 224.76,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "フラワータウン駅",
-   "notes": "間取り: 4LDK | 築年月: 1986年6月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩10分",
-   "lat": 34.877481,
-   "lng": 135.199936,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市狭間が丘４",
-   "land_tsubo": 68.0,
-   "total_land_m2": 224.76,
-   "total_land_tsubo": 68.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-78164692",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_78164692/",
-   "title": "SUUMO 学園６-6-20",
-   "land_old_house": false,
-   "address": "兵庫県三田市学園６-6-20",
-   "price_text": "2280万円",
-   "price_yen": 22800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 186.76,
-   "land_m2": 313.33,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 4LDK | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」車3km",
-   "lat": 34.908944999999996,
-   "lng": 135.163876,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市学園６-6-20",
-   "land_tsubo": 94.8,
-   "total_land_m2": 313.33,
-   "total_land_tsubo": 94.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-78783173",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_78783173/",
-   "title": "SUUMO 学園８",
-   "land_old_house": false,
-   "address": "兵庫県三田市学園８",
-   "price_text": "2280万円",
-   "price_yen": 22800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 124.94,
-   "land_m2": 371.43,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "新三田駅",
-   "notes": "間取り: 3LDK+S（納戸） | 築年月: 2009年3月 | 沿線・駅: ＪＲ福知山線「新三田」バス24分停歩1分",
-   "lat": 34.902356,
-   "lng": 135.162542,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市学園８",
-   "land_tsubo": 112.4,
-   "total_land_m2": 371.43,
-   "total_land_tsubo": 112.4,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14207,7 +13981,235 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-78783173",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_78783173/",
+   "title": "SUUMO 学園８",
+   "land_old_house": false,
+   "address": "兵庫県三田市学園８",
+   "price_text": "2280万円",
+   "price_yen": 22800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 124.94,
+   "land_m2": 371.43,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "新三田駅",
+   "notes": "間取り: 3LDK+S（納戸） | 築年月: 2009年3月 | 沿線・駅: ＪＲ福知山線「新三田」バス24分停歩1分",
+   "lat": 34.902356,
+   "lng": 135.162542,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市学園８",
+   "land_tsubo": 112.4,
+   "total_land_m2": 371.43,
+   "total_land_tsubo": 112.4,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-78164692",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_78164692/",
+   "title": "SUUMO 学園６-6-20",
+   "land_old_house": false,
+   "address": "兵庫県三田市学園６-6-20",
+   "price_text": "2280万円",
+   "price_yen": 22800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 186.76,
+   "land_m2": 313.33,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 4LDK | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」車3km",
+   "lat": 34.908944999999996,
+   "lng": 135.163876,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市学園６-6-20",
+   "land_tsubo": 94.8,
+   "total_land_m2": 313.33,
+   "total_land_tsubo": 94.8,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21601840",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21601840/",
+   "title": "SUUMO 学園６",
+   "land_old_house": false,
+   "address": "兵庫県三田市学園６",
+   "price_text": "2280万円",
+   "price_yen": 22800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 186.76,
+   "land_m2": 313.33,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 4LDK | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」バス25分停歩8分",
+   "lat": 34.903643,
+   "lng": 135.163792,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市学園６",
+   "land_tsubo": 94.8,
+   "total_land_m2": 313.33,
+   "total_land_tsubo": 94.8,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-75113685",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_75113685/",
+   "title": "SUUMO 狭間が丘４",
+   "land_old_house": false,
+   "address": "兵庫県三田市狭間が丘４",
+   "price_text": "2280万円",
+   "price_yen": 22800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 100.76,
+   "land_m2": 224.76,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "フラワータウン駅",
+   "notes": "間取り: 4LDK | 築年月: 1986年6月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩10分",
+   "lat": 34.877481,
+   "lng": 135.199936,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市狭間が丘４",
+   "land_tsubo": 68.0,
+   "total_land_m2": 224.76,
+   "total_land_tsubo": 68.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-22161152",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22161152/",
+   "title": "SUUMO 学園６",
+   "land_old_house": false,
+   "address": "兵庫県三田市学園６",
+   "price_text": "2280万円",
+   "price_yen": 22800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 186.76,
+   "land_m2": 313.33,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1992年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩37分",
+   "lat": 34.908563,
+   "lng": 135.167152,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市学園６",
+   "land_tsubo": 94.8,
+   "total_land_m2": 313.33,
+   "total_land_tsubo": 94.8,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-19",
+   "new": true
+  },
+  {
+   "id": "suumo-21837679",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837679/",
+   "title": "SUUMO あかしあ台１",
+   "land_old_house": false,
+   "address": "兵庫県三田市あかしあ台１",
+   "price_text": "2380万円",
+   "price_yen": 23800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 119.24,
+   "land_m2": 228.96,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "南ウッディタウン駅",
+   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1988年10月 | 沿線・駅: 神戸電鉄公園都市線「南ウッディタウン」徒歩10分",
+   "lat": 34.897599,
+   "lng": 135.186627,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市あかしあ台１",
+   "land_tsubo": 69.3,
+   "total_land_m2": 228.96,
+   "total_land_tsubo": 69.3,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14245,45 +14247,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21837679",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837679/",
-   "title": "SUUMO あかしあ台１",
-   "land_old_house": false,
-   "address": "兵庫県三田市あかしあ台１",
-   "price_text": "2380万円",
-   "price_yen": 23800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 119.24,
-   "land_m2": 228.96,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "南ウッディタウン駅",
-   "notes": "間取り: 4LDK+S（納戸） | 築年月: 1988年10月 | 沿線・駅: 神戸電鉄公園都市線「南ウッディタウン」徒歩10分",
-   "lat": 34.897599,
-   "lng": 135.186627,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市あかしあ台１",
-   "land_tsubo": 69.3,
-   "total_land_m2": 228.96,
-   "total_land_tsubo": 69.3,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14321,7 +14285,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14359,7 +14323,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14398,7 +14362,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14436,7 +14400,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14475,46 +14439,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-18",
-   "new": true
-  },
-  {
-   "id": "suumo-21716579",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21716579/",
-   "title": "SUUMO 下深田",
-   "land_old_house": false,
-   "address": "兵庫県三田市下深田",
-   "price_text": "2580万円",
-   "price_yen": 25800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 97.32,
-   "land_m2": 140.84,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "フラワータウン駅",
-   "notes": "間取り: 4LDK | 築年月: 2007年10月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩14分",
-   "lat": 34.888068,
-   "lng": 135.20829799999998,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "town",
-   "maps_query": "兵庫県三田市下深田",
-   "approx_note": "No street address listed — approx: 下深田 (near フラワータウン駅)",
-   "land_tsubo": 42.6,
-   "total_land_m2": 140.84,
-   "total_land_tsubo": 42.6,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14553,7 +14478,46 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21716579",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21716579/",
+   "title": "SUUMO 下深田",
+   "land_old_house": false,
+   "address": "兵庫県三田市下深田",
+   "price_text": "2580万円",
+   "price_yen": 25800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 97.32,
+   "land_m2": 140.84,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "フラワータウン駅",
+   "notes": "間取り: 4LDK | 築年月: 2007年10月 | 沿線・駅: 神戸電鉄公園都市線「フラワータウン」徒歩14分",
+   "lat": 34.888068,
+   "lng": 135.20829799999998,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "town",
+   "maps_query": "兵庫県三田市下深田",
+   "approx_note": "No street address listed — approx: 下深田 (near フラワータウン駅)",
+   "land_tsubo": 42.6,
+   "total_land_m2": 140.84,
+   "total_land_tsubo": 42.6,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14592,7 +14556,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14631,7 +14595,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14670,45 +14634,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21837693",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837693/",
-   "title": "SUUMO ゆりのき台２",
-   "land_old_house": false,
-   "address": "兵庫県三田市ゆりのき台２",
-   "price_text": "2780万円",
-   "price_yen": 27800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 174.6,
-   "land_m2": 224.84,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 5LDK+S（納戸） | 築年月: 1994年7月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩15分",
-   "lat": 34.908611,
-   "lng": 135.173509,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市ゆりのき台２",
-   "land_tsubo": 68.0,
-   "total_land_m2": 224.84,
-   "total_land_tsubo": 68.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14746,8 +14672,46 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
+  },
+  {
+   "id": "suumo-21837693",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837693/",
+   "title": "SUUMO ゆりのき台２",
+   "land_old_house": false,
+   "address": "兵庫県三田市ゆりのき台２",
+   "price_text": "2780万円",
+   "price_yen": 27800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 174.6,
+   "land_m2": 224.84,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 5LDK+S（納戸） | 築年月: 1994年7月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩15分",
+   "lat": 34.908611,
+   "lng": 135.173509,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市ゆりのき台２",
+   "land_tsubo": 68.0,
+   "total_land_m2": 224.84,
+   "total_land_tsubo": 68.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
+   "new": false
   },
   {
    "id": "suumo-21837682",
@@ -14784,7 +14748,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14823,7 +14787,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14862,83 +14826,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-22041092",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22041092/",
-   "title": "SUUMO あかしあ台４",
-   "land_old_house": false,
-   "address": "兵庫県三田市あかしあ台４",
-   "price_text": "2980万円",
-   "price_yen": 29800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 125.32,
-   "land_m2": 220.87,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 4LDK | 築年月: 1991年3月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩10分",
-   "lat": 34.90661,
-   "lng": 135.186981,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市あかしあ台４",
-   "land_tsubo": 66.8,
-   "total_land_m2": 220.87,
-   "total_land_tsubo": 66.8,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-21837684",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837684/",
-   "title": "SUUMO あかしあ台３",
-   "land_old_house": false,
-   "address": "兵庫県三田市あかしあ台３",
-   "price_text": "2980万円",
-   "price_yen": 29800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 124.61,
-   "land_m2": 238.0,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 5LDK | 築年月: 1992年11月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩12分",
-   "lat": 34.904844999999995,
-   "lng": 135.180793,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市あかしあ台３",
-   "land_tsubo": 72.0,
-   "total_land_m2": 238.0,
-   "total_land_tsubo": 72.0,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -14976,7 +14864,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15014,7 +14902,83 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-22041092",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_22041092/",
+   "title": "SUUMO あかしあ台４",
+   "land_old_house": false,
+   "address": "兵庫県三田市あかしあ台４",
+   "price_text": "2980万円",
+   "price_yen": 29800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 125.32,
+   "land_m2": 220.87,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 4LDK | 築年月: 1991年3月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩10分",
+   "lat": 34.90661,
+   "lng": 135.186981,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市あかしあ台４",
+   "land_tsubo": 66.8,
+   "total_land_m2": 220.87,
+   "total_land_tsubo": 66.8,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-21837684",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_21837684/",
+   "title": "SUUMO あかしあ台３",
+   "land_old_house": false,
+   "address": "兵庫県三田市あかしあ台３",
+   "price_text": "2980万円",
+   "price_yen": 29800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 124.61,
+   "land_m2": 238.0,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 5LDK | 築年月: 1992年11月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩12分",
+   "lat": 34.904844999999995,
+   "lng": 135.180793,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市あかしあ台３",
+   "land_tsubo": 72.0,
+   "total_land_m2": 238.0,
+   "total_land_tsubo": 72.0,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15052,7 +15016,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15090,7 +15054,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15128,7 +15092,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15166,45 +15130,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
-   "new": false
-  },
-  {
-   "id": "suumo-20735399",
-   "city": "Sanda",
-   "source": "private",
-   "source_name": "SUUMO",
-   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_20735399/",
-   "title": "SUUMO ゆりのき台１",
-   "land_old_house": false,
-   "address": "兵庫県三田市ゆりのき台１",
-   "price_text": "3180万円",
-   "price_yen": 31800000,
-   "rent": false,
-   "status": "",
-   "building_m2": 138.98,
-   "land_m2": 212.06,
-   "photo": null,
-   "farmland": false,
-   "listing_type": "used",
-   "landmark": "ウッディタウン中央駅",
-   "notes": "間取り: 4LDK | 築年月: 1997年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩6分",
-   "lat": 34.911343,
-   "lng": 135.17879,
-   "geo_approx": true,
-   "geo_level": "town",
-   "address_level": "full",
-   "maps_query": "兵庫県三田市ゆりのき台１",
-   "land_tsubo": 64.1,
-   "total_land_m2": 212.06,
-   "total_land_tsubo": 64.1,
-   "match": false,
-   "near_match": false,
-   "has_extra_land": false,
-   "preferred": false,
-   "preferred_area": null,
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15242,7 +15168,45 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
+   "new": false
+  },
+  {
+   "id": "suumo-20735399",
+   "city": "Sanda",
+   "source": "private",
+   "source_name": "SUUMO",
+   "source_url": "https://suumo.jp/chukoikkodate/hyogo/sc_sanda/nc_20735399/",
+   "title": "SUUMO ゆりのき台１",
+   "land_old_house": false,
+   "address": "兵庫県三田市ゆりのき台１",
+   "price_text": "3180万円",
+   "price_yen": 31800000,
+   "rent": false,
+   "status": "",
+   "building_m2": 138.98,
+   "land_m2": 212.06,
+   "photo": null,
+   "farmland": false,
+   "listing_type": "used",
+   "landmark": "ウッディタウン中央駅",
+   "notes": "間取り: 4LDK | 築年月: 1997年1月 | 沿線・駅: 神戸電鉄公園都市線「ウッディタウン中央」徒歩6分",
+   "lat": 34.911343,
+   "lng": 135.17879,
+   "geo_approx": true,
+   "geo_level": "town",
+   "address_level": "full",
+   "maps_query": "兵庫県三田市ゆりのき台１",
+   "land_tsubo": 64.1,
+   "total_land_m2": 212.06,
+   "total_land_tsubo": 64.1,
+   "match": false,
+   "near_match": false,
+   "has_extra_land": false,
+   "preferred": false,
+   "preferred_area": null,
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15280,7 +15244,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15318,7 +15282,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15356,7 +15320,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15395,7 +15359,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -15433,7 +15397,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15471,7 +15435,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15509,7 +15473,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15547,7 +15511,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15585,7 +15549,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15623,7 +15587,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15661,7 +15625,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15700,7 +15664,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15739,7 +15703,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15777,7 +15741,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15815,7 +15779,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15853,7 +15817,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15891,7 +15855,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15929,7 +15893,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -15967,7 +15931,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16005,7 +15969,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16043,7 +16007,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16081,7 +16045,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16119,7 +16083,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16157,7 +16121,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": true
   },
   {
@@ -16195,7 +16159,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16233,7 +16197,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16271,7 +16235,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16309,7 +16273,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16347,7 +16311,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16386,7 +16350,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16425,7 +16389,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16464,7 +16428,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16503,7 +16467,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16541,7 +16505,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16579,7 +16543,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16617,7 +16581,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   },
   {
@@ -16656,7 +16620,7 @@
    "preferred": false,
    "preferred_area": null,
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-18",
+   "last_seen": "2026-11-19",
    "new": false
   }
  ],
@@ -16779,6 +16743,13 @@
    "last_seen": "2026-10-28",
    "title": "SUUMO 高野口町向島",
    "removed": "2026-10-29"
+  },
+  {
+   "id": "suumo-21853390",
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-11-18",
+   "title": "SUUMO 城山台２",
+   "removed": "2026-11-19"
   },
   {
    "id": "suumo-21215813",
@@ -17227,6 +17198,13 @@
    "last_seen": "2026-11-13",
    "title": "SUUMO 揖保川町二塚",
    "removed": "2026-11-14"
+  },
+  {
+   "id": "suumo-22124381",
+   "first_seen": "2026-11-07",
+   "last_seen": "2026-11-18",
+   "title": "SUUMO 小野",
+   "removed": "2026-11-19"
   }
  ]
 }
